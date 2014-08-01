@@ -8,7 +8,8 @@ from sandman.model import register, Model
 from sandman.model import activate
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/rodrigo.abreu/Documents/Sakila.sqlite3'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/rodrigoabreu/Documents/Sakila.sqlite3'
+#sqlite:////Users/rodrigo.abreu/Documents/Sakila.sqlite3'
 
 # class Artist(Model):
 #     __tablename__ = 'Artist'
@@ -19,11 +20,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/rodrigo.abreu/Document
 # class Playlist(Model):
 #     __tablename__ = 'Playlist'
 
-class Actor(Model):
-    __tablename__ = 'Actor'
-
-class Customer(Model):
-    __tablename__ = 'Customer'
+# class Actor(Model):
+#     __tablename__ = 'actor'
+#
+# class Customer(Model):
+#     __tablename__ = 'customer'
 
 # class Staff(Model):
 #     __tablename__ = 'Staff'
@@ -31,8 +32,8 @@ class Customer(Model):
 # class Store(Model):
 #     __tablename__ = 'Store'
 
-register((Actor, Customer))
-#activate(browser=True)
+#register((Actor, Customer))
+activate(browser=True)
 app.run(debug=True)
 
 

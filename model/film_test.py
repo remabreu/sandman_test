@@ -5,7 +5,7 @@ Created on Jul 31, 2014
 '''
 import slumber
 
-api = slumber.API("http://localhost:5000/")
+api = slumber.API("http://localhost:5000/", append_slash=False)
 
-print api.Actor.first_name("PENELOPE").get()
+print api.actor.get(first_name="PENELOPE")
 

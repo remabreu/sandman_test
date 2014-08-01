@@ -5,7 +5,7 @@ Created on Jul 31, 2014
 '''
 from sandman import app
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/rodrigo.abreu/Downloads/chinook'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/rodrigoabreu/Downloads/chinook'
 app.config['SANDMAN_GENERATE_PKS'] = True
 
 from sandman.model import activate
